@@ -1,0 +1,65 @@
+/* CSS Document */
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: whitesmoke;
+}
+
+#branchContainer {
+	background-color: white;
+	margin-top: 1px;
+}
+
+.homedata .row {
+	
+	/*background-color: lightgray;*/
+}
+
+
+
+.homedata .row #dineImg {
+	background-color: white;
+	padding: 0px;
+	background-image: url("../img/dine.JPG");
+	background-size: cover;
+}
+
+
+#dineImg .branches {
+	padding: 100px;
+	color: white;
+	
+}
+
+#dineImg .branches #mainChurch:hover {
+	color: #BF7E04;
+}
+
+
+
+.branches h4, .branches h3 {
+	text-align: center;
+	border-bottom: solid 1px gray;
+	margin-bottom: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+p {
+	cursor: pointer;
+}
+
+.branches h5 {
+	text-align: center;
+	border-bottom: solid 1px gray;
+	margin-bottom: 7px;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.col-sm-4 .branches {
+	padding: 3px;
+	margin-top: 20px;
+}

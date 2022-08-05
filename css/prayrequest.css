@@ -1,0 +1,53 @@
+/* CSS Document */
+
+.homedata .row #prayer {
+	background-image: url("../img/hands.jpg");
+	background-size: cover;
+	
+} 
+
+.col-sm-8 {
+	text-align: center;
+	padding: 34px;
+	background-color: white;
+}
+
+.col-sm-8 h4 {
+	color: #BF7E04;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+input[type=text] {
+	width: 50%;
+	padding: 5px;
+	margin-top: 20px;
+	border: none;
+  	border-bottom: 2px solid #BF7E04;
+}
+
+
+
+textarea {
+	width: 50%;
+	padding: 5px;
+	margin-top: 40px;
+  	border: 1px solid #BF7E04;
+	border-radius: 10px;
+}
+
+input[type=submit] {
+	width: 20%;
+	background-color: #BF7E04;
+	color: white;
+	padding: 10px;
+	margin-top:20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  	background-color: lightgray;
+}

@@ -1,0 +1,37 @@
+/* CSS Document */
+
+p {
+	font-size: 17px;
+	text-align: justify;
+}
+
+h4 {
+	color: #BF7E04;
+	font-weight: bold;
+}
+
+h5 {
+	color: #BF7E04;
+	font-weight: bold;
+	text-align: center;
+}
+
+.col-md-12 {
+	margin-top: 50px;
+	padding: 40px;
+	opacity: 0.8;
+	border: solid 0px;
+	border-radius: 30px;
+	background-color: lightgray;
+}
+
+.col-md-4 {
+	text-align: center;
+	padding: 20px;
+	opacity: 0.8;
+}
+
+
+.col-md-4 p {
+	font-size: 15px;
+}

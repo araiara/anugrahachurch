@@ -1,0 +1,66 @@
+footer {
+	background-color: whitesmoke;
+	margin-top: 20px;
+}
+		
+footer .row {
+	background-color: gray;
+	
+}
+
+footer .row .col-sm-4 {
+	background-color: white;
+	margin-top: 3px;
+	padding: 20px;
+	color: #BF7E04;
+}
+		
+footer .row .col-sm-4 p {
+	text-align: justify;
+	color: black;
+	
+}
+		
+footer .row .col-sm-4 .logo img {
+	width: 25%;
+}
+	
+footer .row .col-sm-4 iframe
+{
+	border: solid 1px lightgray;
+	width: 100%;
+}
+		
+footer .row .copyright {
+	padding: 10px;
+	color: white;
+}
+		
+		
+footer .row .copyright a {
+	text-decoration: none;
+	color: white;
+	text-decoration: underline;
+}
+		
+footer .row .copyright a:hover {
+	color: black;
+}
+
+footer .row #copyright {
+	display: flex;
+}
+
+
+footer .row #copyright .leftCopy {
+	width: 60%;
+}
+
+footer .row #copyright .rightCopy {
+	width: 40%;
+	text-align: right;
+}
+
+
+
+	

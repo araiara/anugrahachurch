@@ -1,0 +1,70 @@
+/* CSS Document */
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: whitesmoke;
+}
+
+/**-----------------------------------------------------------------*/
+
+/**-----------------------------------------------------------------*/
+#bodyContainer {
+	padding: 0px;
+	background-color: white;
+	
+	margin-top: 1px;
+}
+
+.homedata {
+	
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.homedata .row {
+	
+	background-color: lightgray;
+}
+
+
+
+.homedata .row .col-sm-6, .col-sm-12 {
+	background-color: white;
+	padding: 10px;
+}
+
+#col-sm .aboutus {
+	margin-top: -5px;
+	/*background-color: whitesmoke;
+	border: solid 1px lightgray;*/
+	/*border-radius: 10px;*/
+	padding: 2px;
+}
+
+#col-sm .aboutus:hover {
+	background-color: whitesmoke;
+	border: solid 1px lightgray;
+	/*border-radius: 10px;*/
+}
+
+.col-sm-6 .aboutus, #col-sm-12 .aboutus {
+	background-color: whitesmoke;
+	padding: 20px;
+	border: solid 1px lightgray;
+	/*border-radius: 20px;*/
+}
+
+.aboutus h4 {
+	text-align: center;
+	border-bottom: solid 1px gray;
+	margin-bottom: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #BF7E04;
+}
+
+p {
+	cursor: pointer;
+}

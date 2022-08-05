@@ -1,0 +1,19 @@
+/* CSS Document */
+
+.row .col-md-4, .row .col-md-3, .row .col-md-6 {
+	
+	margin-top: 20px;
+}
+
+
+
+.caption {
+	text-align: center;
+	font-size: 11px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 50px;
+	color: #BF7E04;
+}

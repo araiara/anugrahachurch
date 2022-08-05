@@ -1,0 +1,109 @@
+/* CSS Document */
+
+/** CSS for header starts*/
+header {
+	display: flex;
+	padding: 5px;
+	background-color: white;
+}
+
+
+header .logo {
+	width: 10%;
+	text-align: center;
+}
+
+header .logo img {
+	width: 72%;	
+} 
+
+
+header .logowrite  {
+	text-align: center;
+	/*font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;*/
+	/*font-family: 'Lexend Mega', sans-serif;*/
+	font-family: 'Orbitron', sans-serif;
+
+	/*font-family: 'Oswald', sans-serif;*/
+	width: 100%;
+	letter-spacing: 10px;
+	margin-left: 5px;
+	color: #BF7E04;
+	cursor: pointer;
+
+	
+}
+
+header .logowrite h1 {
+	margin-top: 25px;
+	font-size: 32px;
+}
+
+header .burger {
+	margin-top: 30px;
+	margin-right: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+header .socialicon {
+	display: flex;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+
+
+header .socialicon i {
+	margin-top: 25px;
+	
+}
+
+header .socialicon #i1 {
+	color: #0D518C;
+}
+
+header .socialicon #i2 {
+	 color: #C02428;
+}
+
+header .socialicon #i3 {
+	color: #0442BF;
+}
+
+header .socialicon #i1:hover {
+	color: lightblue;
+}
+
+header .socialicon #i2:hover {
+	color: lightcoral;
+}
+
+header .socialicon #i3:hover {
+	color: lightblue;
+}
+
+
+
+
+
+/** CSS for header ENDS*/
+@media screen and (max-width: 1200px) {
+	header .logowrite h1 {
+		font-size: 30px;
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 1025px) {
+	header .socialicon:hover p {
+		margin-top: 12px;
+	}
+	header .socialicon p {
+		font-size: 8px;
+	}
+}
+
+
+

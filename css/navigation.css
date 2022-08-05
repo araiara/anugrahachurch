@@ -1,0 +1,293 @@
+/* CSS Document */
+
+/* CSS Document */
+
+
+/** Navigation STARTS*/
+
+nav {
+	/*justify-content: space-around;
+	align-content: center;*/
+	/*background-color: lightgray;*/
+	padding: 1px;
+	border: solid 1px gray;
+	
+	background-color: lightgray;
+}
+
+nav .navigations ul {
+	margin-left: 4.5%;
+	display: flex;
+	list-style: none;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: 'Orbitron', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+	
+}
+
+nav .navigations ul .bar {
+	margin-top: 7px;
+	margin-bottom: -2px;
+}
+
+nav .navigations ul .bar a {
+	display: block;
+	/*border-left: 6px solid red;*/
+	border-left: 6px solid #BF7E04;
+	border-radius: 2px;
+ 	/*background-color: #FFEB72;*/
+	background-color: whitesmoke;
+	padding: 7px;
+	margin-left: 10px;
+	text-decoration: none;
+	color: black;
+	
+	
+}
+
+nav .navigations ul li a:hover {
+	background-color: lightgray;
+}
+
+header .navigations {
+	display: none;
+}
+
+header nav {
+	display: none;
+}
+
+/** Navigation ENDS*/
+/**-----------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1024px) {
+	header .logowrite {
+		width: 80%;
+	}	
+	
+	header .logowrite h1 {
+		font-size: 28px;
+		margin-top: 20px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	header .logowrite {
+		margin-top: -10px;
+		width: 80%;
+		
+	}
+	
+	header .logowrite h1 {
+		font-size: 21px;
+	}
+	
+	header .logo img {
+		width: 80%;	
+		margin: 10px;
+		
+	} 
+}
+
+@media screen and (max-width: 1100px) {
+	nav .navigations ul {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	nav .navigations ul {
+		font-size: 7px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header .logowrite h1 {
+		margin-top: 35px;
+	}
+} 
+
+@media screen and (max-width: 730px) {
+	nav .navigations ul .bar a {
+		margin-left: 5px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	nav .navigations ul {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 657px) {
+	header .logowrite h1 {
+		margin-top: 30px;
+	}
+	
+	nav .navigations ul {
+		margin-left: 15px;
+	}
+} 
+
+@media screen and (max-width: 610px) {
+	nav .navigations ul {
+		margin-left: -10px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	nav .navigations ul {
+		margin-left: -20px;
+	}
+}
+
+@media screen and (max-width: 544px) {
+	header .logowrite h1 {
+		margin-top: 15px;
+	}
+} 
+
+@media screen and (max-width: 490px) {
+	header .logowrite h1 {
+		font-size: 20px;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 402px) {
+	header nav #burger ul .bar {
+		font-size: 7px;
+	}
+	
+	header .logowrite h1 {
+		font-size: 15px;
+		margin-top: 15px;
+	}
+	
+	
+	
+}
+
+@media screen and (max-width: 670px) {
+	nav .navigations ul {
+		font-size: 6px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	body {
+		overflow-x: hidden;
+	}
+	
+	
+	nav #navigate {
+		display: none;
+	}
+	
+	nav #navigate ul .bar {
+		display: none;
+		
+	}
+	
+	header .socialicon {
+		display: none;
+	}
+	
+	header nav {
+		display: block;
+		background-color: white;
+		border-style: none;
+	}
+	
+	header nav #burger {
+		display: block;
+	}
+	
+	
+	
+	header nav #burger #icon {
+		margin-top: 150%;
+		cursor: pointer;
+		
+	}
+
+	
+	header nav #burger  ul {
+		margin-top: 10%;
+		display: flex;
+		flex-direction: column;
+		
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		
+		
+
+	}
+	
+	header nav #burger  ul {
+		position: absolute;
+		display: block;	
+		align-items: center;
+		text-align: center;
+		font-size: 13px;
+		right: 0px;
+		background-color: whitesmoke;
+		width: 100%;
+		padding: 0px;
+		margin-top: 22px;
+		
+	}
+	
+	header nav #burger ul .bar {		
+		margin-right: 10px;
+	}
+	
+	header nav #burger ul .bar a {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-style: none;
+		/*background-color: #FFEB72; <strong>#BF7E04</strong>*/
+		background-color: white;
+		padding: 20px;
+		border-bottom: solid gray;
+		border-radius: 25px;
+	}
+	
+	header nav #burger ul li a:hover {
+		background-color: whitesmoke;
+	}
+	
+	header nav #burger:hover #icon {
+		background-color: lightgoldenrodyellow;
+	}
+	
+	
+	header nav #burger.active ul {
+		transform: translateX(0%);		
+	}
+	
+	header nav #burger.active{
+		margin-bottom: 436px;
+	}
+	
+	header nav #burger ul {
+		border-top: solid 3px lightgray;
+	}
+	
+	
+	
+	#bodyContainer {
+		margin-top:0px;
+	}
+
+	
+}
+
+
+	
+

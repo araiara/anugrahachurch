@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="This is the home page"/>
+<meta name="keywords" content="HTML, CSS, JS"/>
+<meta name="author" content="Arsana Rai"/>
+<meta name="date" content="13-09-2019"/>
+<title>Prayer Requests</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Lexend+Mega|Lexend+Zetta|Orbitron|Oswald&display=swap" rel="stylesheet">
+
+<link rel = "stylesheet" type = "text/css" href = "../bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+<link rel = "stylesheet" type = "text/css" href = "../css/prayrequest.css">
+<link rel = "stylesheet" type = "text/css" href = "../css/indexmain.css">
+<link rel = "stylesheet" type = "text/css" href = "../css/header.css">
+<link rel = "stylesheet" type = "text/css" href = "../css/navigation.css">
+<link rel = "stylesheet" type = "text/css" href = "../css/footer.css">
+
+</head>
+
+<body>
+
+
+	<!--HEADER STARTS HERE-->
+<header>
+		<div class="logo">
+			<img src = "../img/logo.jpg">
+		</div>
+		<div class="logowrite">
+			<h1>ANUGRAHA CHURCH</h1>
+		</div>
+		<div class="socialicon">
+			<a href="https://www.facebook.com/anugraha.yuwasangati">
+				<i id="i1" class="fab fa-facebook-square fa-2x"></i>
+				
+			</a>
+			
+			
+			<a href="https://www.youtube.com/channel/UCB6_6MPqjW9yrYbmx4Fm0Ew">
+				<i id="i2" class="fab fa-youtube fa-2x" style="margin-left: 10px;"></i>			
+			</a>
+			
+			<a href="https://www.google.com/maps/place/Anugraha+Church/@26.8056901,87.2931103,15z/data=!4m5!3m4!1s0x0:0xdbd0ad0ca2d1ea50!8m2!3d26.8056901!4d87.2931103">
+				<i id="i3" class="fab fa-google fa-2x" style="margin-left: 10px"></i>
+				
+			</a>
+			
+		</div>
+		<nav>
+			<div class="navigations" id="burger" onClick="navSlide()">
+				<i class="fas fa-bars fa-lg" id="icon" style="color: #BF7E04;"></i>
+				
+				<ul>
+					<li class="bar">
+						<a href = "../index.html">
+							<i class="fas fa-home fa-lg" style="color: black"></i> 
+							Home
+						</a>
+					</li>
+					<li class="bar">
+						<a href = "../pages/activities.html">
+							<i class="fas fa-bullhorn fa-lg" style="color: black"></i> 
+							Our Activities
+						</a>
+					</li>
+					
+					<li class="bar">
+						<a href = "../pages/gallery.html">
+							<i class="far fa-images fa-lg" style="color: black"></i>
+							Our Gallery
+						</a>
+					</li>
+					<li class="bar">
+						<a href = "../pages/branches.html">
+							<i class="fas fa-church fa-lg" style="color: black"></i>
+							Our Branches
+						</a>
+					</li>
+					
+					<li class="bar">
+						<a href = "prayrequest.html">
+							<i class="fas fa-praying-hands fa-lg" style="color: black"></i>
+							Prayer Requests
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+</header>
+	<!--HEADER ENDS-->
+	<!--=============================================================================-->
+	
+	
+	<!--NAVIGATION BAR STARTS-->
+<nav>
+  	<div class="navigations" id="navigate">
+  		<ul>
+	  		<li class="bar"> 
+		  		<a href="../index.html"> 
+		  			<em class="fas fa-home fa-lg" style="color: black;"></em> 
+		  			Home 
+		  		</a> 
+		  	</li>
+			<li class="bar">
+				<a href = "../pages/activities.html">
+					<i class="fas fa-bullhorn fa-lg" style="color: black"></i> 
+					Our Activities
+				</a>
+			</li>
+			<li class="bar">
+				<a href = "../pages/gallery.html">
+					<i class="far fa-images fa-lg" style="color: black"></i>
+					Our Gallery
+				</a>
+			</li>
+			<li class="bar">
+				<a href = "../pages/branches.html">
+					<i class="fas fa-church fa-lg" style="color: black"></i>
+					Our Branches
+				</a>
+			</li>
+
+			<li class="bar">
+				<a href = "prayrequest.html"  style="background-color: lightgray">
+					<i class="fas fa-praying-hands fa-lg" style="color: black"></i>
+					Prayer Requests
+				</a>
+			</li>
+				
+		</ul>
+	</div>
+	
+</nav>
+	<!--NAVIGATION BAR ENDS-->
+	<!--=============================================================================-->
+	
+	<!--Container-->
+	
+	<div class="container" id="bodyContainer">
+		<div class="homedata" style="padding-bottom: 0px; margin-bottom: 1px">
+			<div class="row">
+				<div class="col-sm-4" id="prayer">
+				</div>
+				<div class="col-sm-8">
+					<h4>Enter your prayer requests here<hr/></h4>
+					<form id="prayrequest_form" onSubmit="prayerDisplay()" action="../php/prayer_requests.php" method="post" novalidate>
+						<input type= "text" id="your_name" name="your_name" placeholder="Name">
+						
+						<input type= "text" id="address" name="address" placeholder="Address">
+						
+						<input type= "text" id="phoneno" name="phoneno" placeholder="Phone no.">
+						
+						<textarea id="message" name="message" placeholder="Your prayer request..."  rows="7" cols="20"></textarea>
+						
+						<br/>
+						
+						<input type="submit" value="Submit">
+		
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Container ENDS-->
+	<!--=============================================================================-->
+	
+
+	<!--FOOTER STARTS-->
+	<footer style="margin-top: 0px">	
+		<div class="container">
+
+		  <div class="row">
+
+			<div class="col-sm-4">
+
+				<div class="logo">
+					<img src = "../img/logo.jpg">
+				</div>
+
+			  <h4>Anugraha Church</h4>
+			  <p>We believe in our Father, who created us, His Son, who redeemed us and Holy Spirit that guides us.</p>
+
+		   </div>
+
+			<div class="col-sm-4">
+			  <h3>Contact</h3>
+			  <ul class="list-unstyled">
+				  <li>
+					<p>
+					  <i class="fas fa-home mr-3"></i> Dharan-15, Church Line
+					</p>
+				  </li>
+				  <li>
+					<p>
+					  <i class="fas fa-envelope mr-3"></i> anugrahachurch@gmail.com</p>
+				  </li>
+				  <li>
+					<p>
+					  <i class="fas fa-phone mr-3"></i> 025-523777</p>
+				  </li>
+
+				</ul>
+			</div>
+			<div class="col-sm-4">
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9289.986306970477!2d87.28890067842893!3d26.80337085699189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbd0ad0ca2d1ea50!2sAnugraha%20Church!5e0!3m2!1sen!2snp!4v1567100530374!5m2!1sen!2snp" width="200" height="200" frameborder="0" allowfullscreen=""></iframe>
+			</div>
+
+			<!-- Copyright --
+			  <div class="copyright" style="text-align: center;">
+			   &copy; 2019 Copyright:
+				<a href="#"> anugrahachurch.com</a>
+			  </div>
+			<!-- Copyright -->
+
+			<div class="copyright">
+				&copy; 2019 Copyright:
+				<a href="#">anugrahachurch.com</a>
+			</div>
+		  </div>
+		</div>
+				<!--JS file STARTS-->
+	  	<script type = "text/javascript" src = "../js/indexmain.js"></script>
+	  	<script type = "text/javascript" src = "../js/prayrequest.js"></script>
+		<script type = "text/javascript" src = "../bootstrap_js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+		<!--JS file ENDS-->
+	</footer>
+	<!--FOOTER ENDS-->
+	<!--=============================================================================-->
+		
+
+
+</body>
+</html>
